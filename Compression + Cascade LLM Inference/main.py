@@ -32,10 +32,10 @@ device = model.device
 model.config.pad_token_id = tokenizer.eos_token_id
 model.generation_config.pad_token_id = tokenizer.eos_token_id
 
-os.environ["CEREBRAS_API_KEY1"] = "csk-eddx5rc6wjpxr4rmvjnjwn4w9tj4d4xx9cjxx28rcphvc6ym"
+os.environ["CEREBRAS_API_KEY1"] = "Enter your API key here"
 client = Cerebras(api_key=os.environ.get("CEREBRAS_API_KEY1"))
 
-genai.configure(api_key="AIzaSyAFIGuqvcOqvB4c4pP_7lcNaaCr2PiyAuQ")
+genai.configure(api_key="Enter your API key here")
 judge_model = genai.GenerativeModel("gemma-4-26b-a4b-it")
 
 compressor = PromptCompressor(
